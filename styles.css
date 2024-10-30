@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(10, 10, 10, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%; 
+}
+
+button#show-login {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#show-signup {
+    background-color: #FF5722;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #3F51B5;
+    color: white;
+}
+
+button#toggle-expense-list {
+    background-color: hsl(148, 100%, 51%);
+    color: white;
+}
+
+button.edit-btn {
+    background-color: #00BCD4;
+    color: white;
+}
+
+button.delete-btn {
+    background-color: #F44336;
+    color: white;
+}
+
+
+button:hover {
+    opacity: 0.9;
+}
+
+ul#expense-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+ul#expense-list li .expense-details {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+ul#expense-list li .buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+ul#expense-list li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+ul#expense-list li button.edit-btn {
+    background-color: #00BCD4;
+    color: white;
+}
+
+ul#expense-list li button.delete-btn {
+    background-color: #F44336;
+    color: white;
+}
+
+
+@media (max-width: 400px) {
+    ul#expense-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul#expense-list li .buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    ul#expense-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+    }
+
+    ul#expense-list li .buttons {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    ul#expense-list li .expense-details {
+        font-size: 12px;
+    }
+}
+
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+}
+
+
+#payment-method {
+    background-color: #f9f9f9; 
+    color: #333; 
+    transition: background-color 0.3s; 
+}
+
+#payment-method:hover {
+    background-color: #e6e6e6; 
+}
+
+#category-filter {
+    margin-top: 20px; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+    background-color: #0dc1ee; 
+    color: #333; 
+    transition: background-color 0.3s; 
+}
+
+#category-filter:hover {
+    background-color: #0dc1ee; 
+}
+

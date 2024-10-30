@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div id="auth-section">
+            <form id="login-form" style="display: none;">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <form id="signup-form">
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Signup</button>
+            </form>
+
+            <div class="auth-toggle">
+                <button id="show-login">Login</button>
+                <button id="show-signup" style="display:none;">Signup</button>
+            </div>
+        </div>
+
+        <div id="tracker-section" style="display:none;">
+            <form id="expense-form">
+                <input type="text" id="category" placeholder="Category" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="date" id="date" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <select id="payment-method">
+                    <option value="" disabled selected>Select Payment Method</option>
+                    <option value="Cash">Cash</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="PayPal">PayPal</option>
+                </select>
+                <button type="submit">Add Expense</button>
+            </form>
+
+            <button id="toggle-expense-list">Show Expenses</button>
+
+            <h2>Expenses List</h2>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Transport">Transport</option>
+                <option value="Food">Food</option>
+                <option value="Entertainment">Entertainment</option>
+                
+            </select>
+            <ul id="expense-list" style="display: none;"></ul> 
+
+            <h3>Total: $<span id="total-cost">0</span></h3>
+            <h3>Remaining: $<span id="remaining-cost">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
